@@ -1,7 +1,7 @@
 import express from "express";
 import upload from "../helper/multer.js";
 import { Login, Logout, Register, getUsers, getUser, deleteUser, simpleStatistics } from "../controller/Users.js";
-import { createCourse, getCourses, getCourse, updateCourse, deleteCourse, getCategories, getPopularCategory, searchCourse } from "../controller/courses.js"
+import { createCourse, getCourses, getCourse, updateCourse, deleteCourse, getCategories, getPopularCategory, searchCourse } from "../controller/Courses.js"
 import { verifyToken } from "../helper/verify.token.js";
 import { adminOnly } from "../helper/admin.only.js";
 import { refreshToken } from "../helper/refresh.token.js";
