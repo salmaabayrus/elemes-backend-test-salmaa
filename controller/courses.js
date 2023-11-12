@@ -1,6 +1,7 @@
 import Courses from "../models/course.model.js";
 import cloudinary from "../helper/cloudinary.js";
 import db from "../helper/database.js";
+import { QueryTypes } from "sequelize";
 
 export const createCourse = async (req, res) => {
   const { title, category, content, price, userId } = req.body;
@@ -114,20 +115,6 @@ export const deleteCourse = async (req, res) => {
   }
 };
 
-export const getCategories = async (req, res) => {
-  try {
-    const categories = await Courses.findAll({
-      attributes: ["category"],
-      group: ["category"],
-    });
-    const result = categories.map((course) => course.category);
-    res.status(200).json(result);
-  } catch (error) {
-    console.log(error);
-    res.status(500).json(error.message);
-  }
-};
-
 export const getPopularCategory = async (req, res) => {
   try {
     const popularCategory = await Courses.findAll({
@@ -149,48 +136,38 @@ export const getPopularCategory = async (req, res) => {
   }
 };
 
-export const searchCourse = async (req, res) => {
-  const { sortBy, searchTerm } = req.query;
+export const getCategories = async (req, res) => {
   try {
-    let order;
-    switch (sortBy) {
-      case "lowest-price":
-        order = [["price", "ASC"]];
-        break;
-      case "highest-price":
-        order = [["price", "DESC"]];
-        break;
-      case "free-price":
-        order = [["price", "ASC"]];
-        break;
-      default:
-        order = [["createdAt", "DESC"]]; // Default sorting, you can change this
-        break;
-    }
+    const query = 'SELECT `category` FROM `courses` GROUP BY `category`';
+    const categories = await db.query(query, {type: QueryTypes.SELECT});
+    res.status(200).json(categories);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json(error.message);
+  }
+};
 
-    const whereClause = {};
-    if (searchTerm) {
-      whereClause.title = {
-        [sequelize.Op.like]: `%${searchTerm}%`,
-      };
-      whereClause.content = {
-        [sequelize.Op.like]: `%${searchTerm}%`,
-      };
-      whereClause.category = {
-        [sequelize.Op.like]: `%${searchTerm}%`,
-      };
+export const searchCourse = async (req, res) => {
+  try {
+    let orderClause = [];
+    if (sortBy === 'highestPrice') {
+      orderClause = [['price', 'DESC']];
+    } else if (sortBy === 'lowestPrice') {
+      orderClause = [['price', 'ASC']];
+    } else if (sortBy === 'free') {
+      orderClause = [['price', 'ASC']];
     }
-
-    const result = await Courses.findAll({
-      where: whereClause,
-      order,
+    const courses = await Courses.findAll({
+      where: {
+        [Op.or]: [
+          { title: { [Op.like]: `%${query}%` } },
+          { content: { [Op.like]: `%${query}%` } },
+          { category: { [Op.like]: `%${query}%` } },
+        ],
+      },
+      order: orderClause,
     });
-
-    if (result.length === 0) {
-      return res.status(404).json({ msg: "No courses found matching the criteria." });
-    };
-    
-    res.status(200).json(result);
+    res.status(200).json(courses);
   } catch (error) {
     console.log(error);
     res.status(500).json(error.message);
