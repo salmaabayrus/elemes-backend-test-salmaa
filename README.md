@@ -42,24 +42,24 @@ npm start
 - terdapat postman collection pada repo ini yang bisa digunakan : Backend Test Elemes.postman_collection.json
 
 // AUTH
-router.post('/login', Login);
-router.get('/token', refreshToken);
-router.delete('/logout', Logout);
+- router.post('/login', Login);
+- router.get('/token', refreshToken);
+- router.delete('/logout', Logout);
 
 // USER
-router.post('/user', Register);
-router.get('/user', verifyToken, adminOnly, getUsers);
-router.get('/user/:id', verifyToken, adminOnly, getUser);
-router.delete('/user/:id', verifyToken, adminOnly, deleteUser);
+- router.post('/user', Register);
+- router.get('/user', verifyToken, adminOnly, getUsers);
+- router.get('/user/:id', verifyToken, adminOnly, getUser);
+- router.delete('/user/:id', verifyToken, adminOnly, deleteUser);
 
 // COURSE
-router.post('/course', verifyToken, adminOnly, upload.single('image'), createCourse);
-router.get('/course', getCourses);
-router.get('/course/:id', verifyToken, getCourse);
-router.patch('/course/:id', verifyToken, adminOnly, upload.single('image'), updateCourse);
-router.delete('/course/:id', verifyToken, adminOnly, deleteCourse);
-router.get('/course/categories/popular', getPopularCategory);
-router.get('/course/categories', verifyToken, getCategories);
-router.get('/course/search', verifyToken, searchCourse);
+- router.post('/course', verifyToken, adminOnly, upload.single('image'), createCourse);
+- router.get('/course', getCourses);
+- router.get('/course/:id', verifyToken, getCourse);
+- router.patch('/course/:id', verifyToken, adminOnly, upload.single('image'), updateCourse);
+- router.delete('/course/:id', verifyToken, adminOnly, deleteCourse);
+- router.get('/course/categories/popular', getPopularCategory);
+- router.get('/course/categories', verifyToken, getCategories);
+- router.get('/course/search', verifyToken, searchCourse);
 
-router.get('/statistics', verifyToken, adminOnly, simpleStatistics);
+- router.get('/statistics', verifyToken, adminOnly, simpleStatistics);
