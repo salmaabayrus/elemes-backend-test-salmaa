@@ -1,0 +1,2424 @@
+{
+	"info": {
+		"_postman_id": "baee9bec-90bf-4b5e-a4fc-17a442680168",
+		"name": "Backend Test Elemes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16547161"
+	},
+	"item": [
+		{
+			"name": "Register user/admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"User J\",\r\n    \"email\": \"userJ@gmail.com\",\r\n    \"password\": \"abcd1234\",\r\n    \"confPassword\": \"abcd1234\",\r\n    \"role\": \"user\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/user",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"User L\",\r\n    \"email\": \"userL@gmail.com\",\r\n    \"password\": \"abcd1234\",\r\n    \"confPassword\": \"abcd1234\",\r\n    \"role\": \"admin\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/user",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699755278&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=GL1Pbm4xEeA69enzsPmT%2FJD1PxaZirNbDPWQQOISy6s%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699755278&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=GL1Pbm4xEeA69enzsPmT%2FJD1PxaZirNbDPWQQOISy6s%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"21-5I5YK4bBPCTIYAM9TW6DMBeRc8Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:14:39 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Register admin Berhasil\"\n}"
+				},
+				{
+					"name": "Register user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"User M\",\r\n    \"email\": \"userM@gmail.com\",\r\n    \"password\": \"abcd1234\",\r\n    \"confPassword\": \"abcd1234\",\r\n    \"role\": \"user\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/user",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699755310&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ShqFYjccepwCutgBMLEq9PE4Ur7DLJn2x9OJuFiyGUo%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699755310&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ShqFYjccepwCutgBMLEq9PE4Ur7DLJn2x9OJuFiyGUo%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"20-AQNTX5jynf062hv9pxO1jT8bnMo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:15:10 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Register user Berhasil\"\n}"
+				},
+				{
+					"name": "Register user/admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"User Z\",\r\n    \"email\": \"userZ@gmail.com\",\r\n    \"password\": \"abcd1234\",\r\n    \"confPassword\": \"abcd1234\",\r\n    \"role\": \"admin\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-5I5YK4bBPCTIYAM9TW6DMBeRc8Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 03:14:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Register admin Berhasil\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Ksalmaa.admin@gmail.com\",\r\n    \"password\": \"abcd1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/login",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"Ksalmaa.admin@gmail.com\",\r\n    \"password\": \"abcd1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/login",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699755545&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=d0rEY6pX3S0S8k6K7TUy1bNjSpaMcVOwxJwOCsKP8AQ%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699755545&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=d0rEY6pX3S0S8k6K7TUy1bNjSpaMcVOwxJwOCsKP8AQ%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYWxtYWEgSyIsImVtYWlsIjoiS3NhbG1hYS5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NTU1NDUsImV4cCI6MTY5OTg0MTk0NX0.GY9TH7_zalYnDn9TlGLGA5oohcZXLNCHeYZ8X5fmK9M; Max-Age=86400; Path=/; Expires=Mon, 13 Nov 2023 02:19:05 GMT; HttpOnly; Secure"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"e6-9ujEyRJZagXawu5C5GHmp+yDnW0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:19:05 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYWxtYWEgSyIsImVtYWlsIjoiS3NhbG1hYS5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NTU1NDUsImV4cCI6MTY5OTc1NTYwNX0.Il5iXPu0OY3Cgm_90RDmVrEBBZdTouUTXUuBlN0Ve_M\"\n}"
+				},
+				{
+					"name": "Login user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"userM@gmail.com\",\r\n    \"password\": \"abcd1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/login",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699755589&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=O0xINeFN8yj0U2cIdJJj8sEpQ2KaWtu5JVD89vD%2B86s%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699755589&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=O0xINeFN8yj0U2cIdJJj8sEpQ2KaWtu5JVD89vD%2B86s%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEzLCJuYW1lIjoiVXNlciBNIiwiZW1haWwiOiJ1c2VyTUBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NTU1OTAsImV4cCI6MTY5OTg0MTk5MH0.r2RLqieJkmfxCKvy-uO0JT1z2yZ2QgDj1Wg4hErqVdk; Max-Age=86400; Path=/; Expires=Mon, 13 Nov 2023 02:19:50 GMT; HttpOnly; Secure"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "218"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"da-JyEvK7v1osORZHjj4gw46RZZ9Zo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:19:50 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEzLCJuYW1lIjoiVXNlciBNIiwiZW1haWwiOiJ1c2VyTUBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NTU1OTAsImV4cCI6MTY5OTc1NTY1MH0.FxuQB3XAV--nvn4GNRVzz0RZAfTu8GMgLmf89hPXTfw\"\n}"
+				},
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"userZ@gmail.com\",\r\n    \"password\": \"abcd1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJuYW1lIjoiVXNlciBaIiwiZW1haWwiOiJ1c2VyWkBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NTg5MTcsImV4cCI6MTY5OTg0NTMxN30.2IeCsezl4V2vPDyvQTHASrKNZyWOPa7cCQtO0El00ao; Max-Age=86400; Path=/; Expires=Mon, 13 Nov 2023 03:15:18 GMT; HttpOnly; Secure"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "218"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"da-jF56QGgIV5lLrBHzPsoU90WjP5k\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 03:15:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJuYW1lIjoiVXNlciBaIiwiZW1haWwiOiJ1c2VyWkBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NTg5MTcsImV4cCI6MTY5OTc1ODk3N30.ct5ZoRn_RLqdUZxWt4f7-fR2u89HosPMtZMN0jSWaSk\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Token",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/token",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Token",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/token",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699755608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ah0kp%2BgcSxdzu69JeNo0CnBf7TcsEh0SZIwQqigTt%2BA%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699755608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ah0kp%2BgcSxdzu69JeNo0CnBf7TcsEh0SZIwQqigTt%2BA%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "218"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"da-I8T2V0UKITrdQjL7gKHKqZDabXo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:20:09 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEzLCJuYW1lIjoiVXNlciBNIiwiZW1haWwiOiJ1c2VyTUBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NTU2MDksImV4cCI6MTY5OTc1NjIwOX0.qD6_gejUmphhF8vgJUijf0BXzsglQy2CcXa4R4eA538\"\n}"
+				},
+				{
+					"name": "Token",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "218"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"da-mGIBBkaLnit0+NNae/EgyAs5j0Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 03:15:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJuYW1lIjoiVXNlciBaIiwiZW1haWwiOiJ1c2VyWkBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NTg5MzYsImV4cCI6MTY5OTc1OTUzNn0.VNzjU0B9VyIrJJE1iSXBf-H8KEWuJ8ORzJsDdlWn6oY\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/logout",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Logout",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/logout",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699755621&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=qMy48zElBQWJSrj0w%2FgxktfGJSiOlwrgzowZOTbyLU8%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699755621&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=qMy48zElBQWJSrj0w%2FgxktfGJSiOlwrgzowZOTbyLU8%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "refreshToken=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"19-qpt2BdxShslaUFf2M+I/N7pioTg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:20:21 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Berhasil Logout\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GetAllUser [ADMIN ONLY]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYWxtYWEgSyIsImVtYWlsIjoiS3NhbG1hYS5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NDg5MzIsImV4cCI6MTY5OTc0OTUzMn0.84EvAl5PvrmAGSphXGrwoEuIdiP2yAdVNAxWDE4I9s4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYWxtYWEgQiIsImVtYWlsIjoic2FsbWFhYmF5cnVzQGdtYWlsLmNvbSIsImlhdCI6MTY5OTY3Nzk5MCwiZXhwIjoxNjk5Njc4MDIwfQ.nlaMUeY5s6YACUr8hclENum6IfPOlBcj1wtma-FtcOU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/user",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetAllUser by Admin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYWxtYWEgQiIsImVtYWlsIjoic2FsbWFhYmF5cnVzQGdtYWlsLmNvbSIsImlhdCI6MTY5OTY3Nzk5MCwiZXhwIjoxNjk5Njc4MDIwfQ.nlaMUeY5s6YACUr8hclENum6IfPOlBcj1wtma-FtcOU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/user",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699755673&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Y5ZTwHtghTZT%2Ff9ffNvwM8ajxXJch%2FJ%2B7%2FS0vAymJeM%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699755673&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Y5ZTwHtghTZT%2Ff9ffNvwM8ajxXJch%2FJ%2B7%2FS0vAymJeM%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "941"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"3ad-4Y8IxwqQVfRhZZH/vK5nnEemAwA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:21:14 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"uuid\": \"65b3f2dd-2467-4531-9ea4-3f56feeefa44\",\n        \"name\": \"Salmaa K\",\n        \"role\": \"admin\"\n    },\n    {\n        \"uuid\": \"9626aebc-ff70-4302-a1c8-c9854e713e66\",\n        \"name\": \"User B\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"f28c788e-b83f-4a88-8268-18a053a983fe\",\n        \"name\": \"User C\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"0c28d0f0-423f-4e87-b112-f18a5d79370b\",\n        \"name\": \"User D\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"ab2c9663-b6e6-43a6-965a-cf5a97b10f37\",\n        \"name\": \"User E\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"47af7a85-24a8-4571-9087-a29a6867c5ba\",\n        \"name\": \"User F\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"8dd6a1ee-d118-433b-8668-4357e022a8b1\",\n        \"name\": \"User G\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"9596286a-e711-41ea-9acc-d43d1c77c753\",\n        \"name\": \"User H\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"76a2aea3-f327-4e15-90df-3734f42d9a8f\",\n        \"name\": \"User I\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"310058f7-ea0b-4141-9816-bee61d8d4349\",\n        \"name\": \"User J\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"64b92301-c9e2-4677-bec8-73a8256676c0\",\n        \"name\": \"User L\",\n        \"role\": \"admin\"\n    },\n    {\n        \"uuid\": \"bd1d043a-c03c-4a0b-bd2d-119e593efd0b\",\n        \"name\": \"User M\",\n        \"role\": \"user\"\n    }\n]"
+				},
+				{
+					"name": "GetAllUser by User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYWxtYWEgQiIsImVtYWlsIjoic2FsbWFhYmF5cnVzQGdtYWlsLmNvbSIsImlhdCI6MTY5OTY3Nzk5MCwiZXhwIjoxNjk5Njc4MDIwfQ.nlaMUeY5s6YACUr8hclENum6IfPOlBcj1wtma-FtcOU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/user",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699755725&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=gzFFrVU6CVAwWZk22U9MH5tyF3IW1hje391qFTO58tk%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699755725&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=gzFFrVU6CVAwWZk22U9MH5tyF3IW1hje391qFTO58tk%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"19-TftKY/GtQvVDhE6vUMDwTYOKFlU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:22:06 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Akses terlarang\"\n}"
+				},
+				{
+					"name": "GetAllUser [ADMIN ONLY]",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYWxtYWEgQiIsImVtYWlsIjoic2FsbWFhYmF5cnVzQGdtYWlsLmNvbSIsImlhdCI6MTY5OTY3Nzk5MCwiZXhwIjoxNjk5Njc4MDIwfQ.nlaMUeY5s6YACUr8hclENum6IfPOlBcj1wtma-FtcOU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/user",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699758977&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=BCVoVp4dThTYZD8MlTPQ%2B0x0FL62L0m8GRd7d27UZnM%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699758977&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=BCVoVp4dThTYZD8MlTPQ%2B0x0FL62L0m8GRd7d27UZnM%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "942"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"3ae-AGMrpQ5GZ0Sl4ZAl8GRZSD53EkQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 03:16:18 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"uuid\": \"65b3f2dd-2467-4531-9ea4-3f56feeefa44\",\n        \"name\": \"Salmaa K\",\n        \"role\": \"admin\"\n    },\n    {\n        \"uuid\": \"9626aebc-ff70-4302-a1c8-c9854e713e66\",\n        \"name\": \"User B\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"f28c788e-b83f-4a88-8268-18a053a983fe\",\n        \"name\": \"User C\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"0c28d0f0-423f-4e87-b112-f18a5d79370b\",\n        \"name\": \"User D\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"ab2c9663-b6e6-43a6-965a-cf5a97b10f37\",\n        \"name\": \"User E\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"47af7a85-24a8-4571-9087-a29a6867c5ba\",\n        \"name\": \"User F\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"8dd6a1ee-d118-433b-8668-4357e022a8b1\",\n        \"name\": \"User G\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"9596286a-e711-41ea-9acc-d43d1c77c753\",\n        \"name\": \"User H\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"76a2aea3-f327-4e15-90df-3734f42d9a8f\",\n        \"name\": \"User I\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"310058f7-ea0b-4141-9816-bee61d8d4349\",\n        \"name\": \"User J\",\n        \"role\": \"user\"\n    },\n    {\n        \"uuid\": \"64b92301-c9e2-4677-bec8-73a8256676c0\",\n        \"name\": \"User L\",\n        \"role\": \"admin\"\n    },\n    {\n        \"uuid\": \"3bc2cf81-acba-49f2-a90e-6a9b894e07f5\",\n        \"name\": \"User Z\",\n        \"role\": \"admin\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GetUserbyId [ADMIN ONLY]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYWxtYWEgSyIsImVtYWlsIjoiS3NhbG1hYS5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NDg5MzIsImV4cCI6MTY5OTc0OTUzMn0.84EvAl5PvrmAGSphXGrwoEuIdiP2yAdVNAxWDE4I9s4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/user/76cb30e1-f9a7-4b34-9039-a84226107645",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user",
+						"76cb30e1-f9a7-4b34-9039-a84226107645"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetUserbyId [ADMIN ONLY]",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/user/bd1d043a-c03c-4a0b-bd2d-119e593efd0b",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"user",
+								"bd1d043a-c03c-4a0b-bd2d-119e593efd0b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699755829&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=OUbyAw6f4GjQN5dPaVnj5G8xEOpQWlcPRF9molqbZ1Y%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699755829&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=OUbyAw6f4GjQN5dPaVnj5G8xEOpQWlcPRF9molqbZ1Y%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "499"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"1f3-w3zwPBs+Ee3EkkhGzabUI83AFd8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:23:50 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 13,\n    \"uuid\": \"bd1d043a-c03c-4a0b-bd2d-119e593efd0b\",\n    \"name\": \"User M\",\n    \"email\": \"userM@gmail.com\",\n    \"password\": \"$2b$10$ZXR5PcOtNCQrzUOBrKtZnuvnjFdF/q6SHjPgb6rLvmtdbgYaHWyr.\",\n    \"role\": \"user\",\n    \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEzLCJuYW1lIjoiVXNlciBNIiwiZW1haWwiOiJ1c2VyTUBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NTU3MDQsImV4cCI6MTY5OTg0MjEwNH0.YO8sQpdt4ZN27Huv_uCU-JZoHb_ZO07W7X3698s8V2g\",\n    \"deletedAt\": null,\n    \"createdAt\": \"2023-11-12T02:15:10.000Z\",\n    \"updatedAt\": \"2023-11-12T02:21:44.000Z\"\n}"
+				},
+				{
+					"name": "GetUserbyId [ADMIN ONLY]",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/64b92301-c9e2-4677-bec8-73a8256676c0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"64b92301-c9e2-4677-bec8-73a8256676c0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "302"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12e-FHgNibWkweAsVs9J6wqyMYfbs1I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 03:18:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 12,\n    \"uuid\": \"64b92301-c9e2-4677-bec8-73a8256676c0\",\n    \"name\": \"User L\",\n    \"email\": \"userL@gmail.com\",\n    \"password\": \"$2b$10$33YsU5se3g53fC.gZ9kRLOcPt/N2hRMO5mGBLvSwbnq5dd8eplwlK\",\n    \"role\": \"admin\",\n    \"refresh_token\": null,\n    \"deletedAt\": null,\n    \"createdAt\": \"2023-11-12T02:14:38.000Z\",\n    \"updatedAt\": \"2023-11-12T02:14:38.000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteUser [ADMIN ONLY]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYWxtYWEgSyIsImVtYWlsIjoiS3NhbG1hYS5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NDg5MzIsImV4cCI6MTY5OTc0OTUzMn0.84EvAl5PvrmAGSphXGrwoEuIdiP2yAdVNAxWDE4I9s4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/user/76cb30e1-f9a7-4b34-9039-a84226107645",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"user",
+						"76cb30e1-f9a7-4b34-9039-a84226107645"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteUser [ADMIN ONLY]",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/user/bd1d043a-c03c-4a0b-bd2d-119e593efd0b",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"user",
+								"bd1d043a-c03c-4a0b-bd2d-119e593efd0b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699755876&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=eyFJFaql3hH3wGyghfsO6D%2F2bJhb7%2Fw1XysUGNH2UkM%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699755876&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=eyFJFaql3hH3wGyghfsO6D%2F2bJhb7%2Fw1XysUGNH2UkM%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "22"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"16-2l9dll0byLaPQO/7lveNVcKxlEo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:24:37 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"User Deleted\"\n}"
+				},
+				{
+					"name": "deleteUser [ADMIN ONLY]",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/9626aebc-ff70-4302-a1c8-c9854e713e66",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"9626aebc-ff70-4302-a1c8-c9854e713e66"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "22"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"16-2l9dll0byLaPQO/7lveNVcKxlEo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 03:19:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"User Deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Simple Statistics [ADMIN ONLY]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYWxtYWEgSyIsImVtYWlsIjoiS3NhbG1hYS5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NDg5MzIsImV4cCI6MTY5OTc0OTUzMn0.84EvAl5PvrmAGSphXGrwoEuIdiP2yAdVNAxWDE4I9s4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/statistics",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"statistics"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Simple Statistics [ADMIN ONLY]",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/statistics",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"statistics"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699755893&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wa7FvJUqjQ8kQNLA%2FJHINUDIDyzMC7xFfHr4Mb5z8PU%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699755893&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wa7FvJUqjQ8kQNLA%2FJHINUDIDyzMC7xFfHr4Mb5z8PU%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "65"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"41-TnhLLihz8Zl4iUWlhC/igFPugNc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:24:54 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"totalUsers\": 11,\n        \"totalCourses\": 16,\n        \"totalFreeCourses\": 8\n    }\n}"
+				},
+				{
+					"name": "Simple Statistics [ADMIN ONLY]",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/statistics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"statistics"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "65"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"41-TnhLLihz8Zl4iUWlhC/igFPugNc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 03:19:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"totalUsers\": 11,\n        \"totalCourses\": 16,\n        \"totalFreeCourses\": 8\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "CreateCourse [ADMIN ONLY]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJTYWxtYWEgSyIsImVtYWlsIjoiS3NhbG1hYS5hZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE2OTk3NDg5MzIsImV4cCI6MTY5OTc0OTUzMn0.84EvAl5PvrmAGSphXGrwoEuIdiP2yAdVNAxWDE4I9s4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Course Frontend 2",
+							"contentType": "",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "frontend",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/HP/Downloads/Background/20095-beach-hd-wallpaper.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/course",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllCourses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/course",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"course"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetAllCourses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/course",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"course"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699756441&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=aGW6usj%2Bu8dOTh7y%2BtGA0GU7RY53yWWy4pjYJ8QMhQA%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699756441&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=aGW6usj%2Bu8dOTh7y%2BtGA0GU7RY53yWWy4pjYJ8QMhQA%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1878"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"756-8Ewwkxz+RquCXr57o4eNn9BGyxU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 02:34:01 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"uuid\": \"8bbfb123-970f-4ca9-954f-4e0a829b5c8a\",\n        \"title\": \"Course UI/UX 2\",\n        \"category\": \"ui/ux\",\n        \"price\": 0,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"92f3cfda-c995-482c-b5ea-e2b70f3fa0f8\",\n        \"title\": \"Course UI/UX 1\",\n        \"category\": \"ui/ux\",\n        \"price\": 6789876,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"7ad6ab0a-6690-4167-8f14-26e9ba947952\",\n        \"title\": \"Course UI/UX 3\",\n        \"category\": \"ui/ux\",\n        \"price\": 78903,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"99bad762-dc78-4359-aa51-83c1e36180b2\",\n        \"title\": \"Course UI/UX 4\",\n        \"category\": \"ui/ux\",\n        \"price\": 123,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"475dd997-6181-4590-9749-b97edeaa2c9e\",\n        \"title\": \"Course Fullstack 1\",\n        \"category\": \"fullstack\",\n        \"price\": 0,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"2cb6e663-390b-401b-a4e1-e2718c8e0f40\",\n        \"title\": \"Course Fullstack 2\",\n        \"category\": \"fullstack\",\n        \"price\": 89,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"8d80822d-8cb1-4344-b3cd-d022409de178\",\n        \"title\": \"Course Fullstack 3\",\n        \"category\": \"fullstack\",\n        \"price\": 0,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"f202cfc3-2ea5-42f7-8a38-d49509d0883e\",\n        \"title\": \"Course Backend 1\",\n        \"category\": \"backend\",\n        \"price\": 678,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"9629be14-1e7e-48d8-bf68-9c8fece2af5f\",\n        \"title\": \"Course Backend 2\",\n        \"category\": \"backend\",\n        \"price\": 987,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"1472f5c0-b3b9-46ad-ab88-98530c8f3373\",\n        \"title\": \"Course Backend 3\",\n        \"category\": \"backend\",\n        \"price\": 0,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"9dad48bb-0363-4ca7-93be-8b48b6135201\",\n        \"title\": \"Course Backend 4\",\n        \"category\": \"backend\",\n        \"price\": 0,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"c61100bd-8bd6-47b5-aba3-27175ae5d789\",\n        \"title\": \"Course Backend 5\",\n        \"category\": \"backend\",\n        \"price\": 0,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"ae0c3758-f188-48f0-8e96-a5d10a3c20f1\",\n        \"title\": \"Course Backend 6\",\n        \"category\": \"backend\",\n        \"price\": 0,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"92c243fa-ad5c-4955-8a7c-fb6a81a48d34\",\n        \"title\": \"Course Backend 7\",\n        \"category\": \"backend\",\n        \"price\": 272,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"9c0968a8-480b-431d-8b98-9cab2db31eca\",\n        \"title\": \"Course Frontend 1\",\n        \"category\": \"frontend\",\n        \"price\": 272,\n        \"likes\": 0\n    },\n    {\n        \"uuid\": \"bdca1e1c-c1c6-4512-b31d-da19530d0c00\",\n        \"title\": \"Course Frontend 2\",\n        \"category\": \"frontend\",\n        \"price\": 0,\n        \"likes\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GetCoursesbyId [LOGIN NEEDED]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEyLCJuYW1lIjoiU2FsbWFhIEsiLCJlbWFpbCI6IktzYWxtYWEuYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjk5NzQyOTQ2LCJleHAiOjE2OTk3NDM1NDZ9.t1F7fCSrWe1uv1AswO9rEQxlG1DO1LXv-NJ8yRf9U9A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/course/92f3cfda-c995-482c-b5ea-e2b70f3fa0f8",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"course",
+						"92f3cfda-c995-482c-b5ea-e2b70f3fa0f8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetCoursesbyId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/course/c61100bd-8bd6-47b5-aba3-27175ae5d789",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"course",
+								"c61100bd-8bd6-47b5-aba3-27175ae5d789"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699759600&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=HsP1t3z7aWvErKytJA0G%2FFxOZ3unFT8HUiqUUAOhZF4%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699759600&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=HsP1t3z7aWvErKytJA0G%2FFxOZ3unFT8HUiqUUAOhZF4%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "767"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"2ff-lCsUCx8oh1M+FYsUr2Fev/2lf3I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 03:26:41 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 13,\n    \"uuid\": \"c61100bd-8bd6-47b5-aba3-27175ae5d789\",\n    \"title\": \"Course Backend 5\",\n    \"category\": \"backend\",\n    \"image\": \"https://res.cloudinary.com/dzccfwlku/image/upload/v1699749259/iwqrad79omxsgdbfqxdh.jpg\",\n    \"content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\",\n    \"price\": 0,\n    \"likes\": 0,\n    \"userId\": 1,\n    \"createdAt\": \"2023-11-12T00:34:20.000Z\",\n    \"updatedAt\": \"2023-11-12T00:34:20.000Z\"\n}"
+				},
+				{
+					"name": "GetCoursesbyId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/course/c61100bd-8bd6-47b5-aba3-27175ae5d789",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"course",
+								"c61100bd-8bd6-47b5-aba3-27175ae5d789"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "767"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2ff-lCsUCx8oh1M+FYsUr2Fev/2lf3I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 03:27:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 13,\n    \"uuid\": \"c61100bd-8bd6-47b5-aba3-27175ae5d789\",\n    \"title\": \"Course Backend 5\",\n    \"category\": \"backend\",\n    \"image\": \"https://res.cloudinary.com/dzccfwlku/image/upload/v1699749259/iwqrad79omxsgdbfqxdh.jpg\",\n    \"content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\",\n    \"price\": 0,\n    \"likes\": 0,\n    \"userId\": 1,\n    \"createdAt\": \"2023-11-12T00:34:20.000Z\",\n    \"updatedAt\": \"2023-11-12T00:34:20.000Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateCoursebyId [ADMIN ONLY]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEyLCJuYW1lIjoiU2FsbWFhIEsiLCJlbWFpbCI6IktzYWxtYWEuYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjk5NzQyNTg4LCJleHAiOjE2OTk3NDMxODh9.ecRJSKmDiA46ZvXjB5egtAK4euekXZn-L3vciIEiQiM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Course UI/UX 2",
+							"contentType": "",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "ui/ux",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "userId",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/HP/Downloads/Tokyo Revenge/Mitsuya.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/548efcdf-5e39-4651-879d-4bd2aadb3f20",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"548efcdf-5e39-4651-879d-4bd2aadb3f20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCoursebyId [ADMIN ONLY]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEyLCJuYW1lIjoiU2FsbWFhIEsiLCJlbWFpbCI6IktzYWxtYWEuYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjk5NzQyOTQ2LCJleHAiOjE2OTk3NDM1NDZ9.t1F7fCSrWe1uv1AswO9rEQxlG1DO1LXv-NJ8yRf9U9A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/548efcdf-5e39-4651-879d-4bd2aadb3f20",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"548efcdf-5e39-4651-879d-4bd2aadb3f20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMostPopularCategory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/course/categories/popular",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"course",
+						"categories",
+						"popular"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetMostPopularCategory",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/course/categories/popular",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"course",
+								"categories",
+								"popular"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "9"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9-lBEeIyl274BXUKIzBcKaKQy9DAs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 03:25:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"backend\""
+				},
+				{
+					"name": "GetMostPopularCategory",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/course/categories/popular",
+							"protocol": "https",
+							"host": [
+								"elemes-backend-test-salmaa-228b02352d36",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"course",
+								"categories",
+								"popular"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1699759530&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Opzn46vLPNwEfLUN5SwZ7TQ5lT6%2F3AHMOd4czideHUE%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1699759530&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Opzn46vLPNwEfLUN5SwZ7TQ5lT6%2F3AHMOd4czideHUE%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "9"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"9-lBEeIyl274BXUKIzBcKaKQy9DAs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Nov 2023 03:25:31 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "\"backend\""
+				}
+			]
+		},
+		{
+			"name": "GetCoursesCategory [LOGIN NEEDED]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/course/categories",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"course",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchCourse [LOGIN NEEDED]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://elemes-backend-test-salmaa-228b02352d36.herokuapp.com/course/search?sortBy=free&searchTerm=backend",
+					"protocol": "https",
+					"host": [
+						"elemes-backend-test-salmaa-228b02352d36",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"course",
+						"search"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "free"
+						},
+						{
+							"key": "searchTerm",
+							"value": "backend"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
